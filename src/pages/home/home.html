@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  {{ informacion.login }}
+  <img [src]="informacion.avatar_url" alt="">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-label floating>Username</ion-label>
+        <ion-input [(ngModel)]="username" type="text"></ion-input>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+    <button ion-button block (click)="funcionDojo()">Search</button>
+  </ion-card>
+
+</ion-content>
